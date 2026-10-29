@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>清迈 · 三日行程 | 人生 · 在路上</title>
+<meta name="description" content="清迈 2026.10.29 – 11.01：三日行程总览、每日时间安排、景点、用餐与休息、交通方式、地图导航、预算与行前准备。">
+<meta name="theme-color" content="#1e3a2d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231e3a2d'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23c2a06b' font-family='serif'%3E路%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav nav--dark" aria-label="主导航">
+  <div class="nav-inner">
+    <a class="brand" href="index.html#top">
+      <b>人生 · 在路上</b>
+      <span>MY TRAVEL JOURNAL</span>
+    </a>
+    <button class="burger" aria-label="打开菜单" aria-expanded="false"><i></i></button>
+    <div class="nav-links">
+      <a href="index.html#top">2026 · 在路上</a>
+      <a href="index.html#map">旅行地图</a>
+      <a href="index.html#timeline">年度行程</a>
+      <a href="index.html#memories">旅行记忆</a>
+      <a href="index.html#checklist">行前清单</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ 页面封面 ============ -->
+<header class="page-hero" id="top">
+  <div class="hero-media ph" data-ph id="cmMedia"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-inner">
+    <a class="back-link" href="index.html#map">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      返回旅行地图
+    </a>
+    <div class="kicker hero-kicker">CHIANG MAI · 清迈</div>
+    <h1 class="page-title" id="cmTitle">清迈</h1>
+    <div class="page-en" id="cmEn"></div>
+    <div class="page-dates" id="cmDates"></div>
+    <p class="page-lead" id="cmLead"></p>
+  </div>
+</header>
+
+<!-- ============ 关键信息 ============ -->
+<div class="fact-bar" id="cmFacts"></div>
+
+<main>
+
+<!-- ============ 三日总览 ============ -->
+<section class="section" id="overview">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div>
+        <div class="kicker">OVERVIEW · 行程总览</div>
+        <h2>三天，一天一个主题</h2>
+        <p id="cmNote"></p>
+      </div>
+      <div class="rule"></div>
+    </div>
+    <div class="ov-grid rise" id="cmOverview"></div>
+  </div>
+</section>
+
+<!-- ============ 每日时间轴 ============ -->
+<section class="section section--tint" id="days">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div>
+        <div class="kicker">DAY BY DAY · 每日安排</div>
+        <h2>时间都留了余量</h2>
+        <p>每天只放一个重点，中间一定有吃饭、回酒店躺着的时间。标签：景点 / 吃饭 / 休息 / 交通 / 机动。</p>
+      </div>
+      <div class="rule"></div>
+    </div>
+    <nav class="day-nav rise" id="cmDayNav" aria-label="跳转到某一天"></nav>
+    <div id="cmDays"></div>
+  </div>
+</section>
+
+<!-- ============ 预算 ============ -->
+<section class="section" id="budget">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div>
+        <div class="kicker">BUDGET · 预算</div>
+        <h2>这趟大概要花多少</h2>
+        <p>数字是预估，机票和住宿按你自己的订单改。</p>
+      </div>
+      <div class="rule"></div>
+    </div>
+    <div class="rise" id="cmBudget"></div>
+  </div>
+</section>
+
+<!-- ============ 行前准备 ============ -->
+<section class="section section--tint" id="prepare">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div>
+        <div class="kicker">BEFORE GOING · 行前准备</div>
+        <h2>出发前要办的事</h2>
+        <p>和首页的行前清单分开：这里只写清迈特有的。</p>
+      </div>
+      <div class="rule"></div>
+    </div>
+    <div class="prep-grid rise" id="cmPrep"></div>
+    <div class="tip-box rise">
+      <b>还有一件事</b>
+      这一趟的通用清单（护照、机票、酒店、网络、现金、衣物）在
+      <a href="index.html#checklist" style="color:var(--forest);border-bottom:1px solid var(--line)">首页 · 行前清单</a>
+      里，可以逐条勾选，状态会存在你的浏览器里。
+    </div>
+  </div>
+</section>
+
+<!-- ============ 图片 ============ -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div>
+        <div class="kicker">GALLERY · 图片</div>
+        <h2>先把画面放在这里</h2>
+        <p>现在是占位图。你自己的照片放进 <code>images/</code>，再把 <code>data.js</code> 里的地址换掉就行。</p>
+      </div>
+      <div class="rule"></div>
+    </div>
+    <div class="gal-grid rise" id="cmGallery"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" data-footer></footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/chiangmai.js"></script>
+</body>
+</html>

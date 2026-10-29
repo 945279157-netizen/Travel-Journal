@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>人生 · 在路上 | MY TRAVEL JOURNAL · 2026</title>
+<meta name="description" content="2026 年度旅行主页：旅行地图、年度行程时间线、旅行记忆与行前清单。去看世界，也记录一路上的自己。">
+<meta name="theme-color" content="#1e3a2d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231e3a2d'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23c2a06b' font-family='serif'%3E路%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="人生 · 在路上 | MY TRAVEL JOURNAL">
+<meta property="og:description" content="去看世界，也记录一路上的自己。">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<nav class="nav nav--dark" aria-label="主导航">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <b>人生 · 在路上</b>
+      <span>MY TRAVEL JOURNAL</span>
+    </a>
+    <button class="burger" aria-label="打开菜单" aria-expanded="false"><i></i></button>
+    <div class="nav-links">
+      <a href="#top">2026 · 在路上</a>
+      <a href="#map">旅行地图</a>
+      <a href="#timeline">年度行程</a>
+      <a href="#memories">旅行记忆</a>
+      <a href="#checklist">行前清单</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ 封面 ============ -->
+<header class="hero" id="top">
+  <div class="hero-media ph" data-ph id="heroMedia"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-inner">
+    <div class="kicker hero-kicker" id="heroKicker"></div>
+    <div class="hero-year" id="heroYear"></div>
+    <h1 class="hero-cn" id="heroCn"></h1>
+    <div class="hero-en" id="heroEn"></div>
+    <div class="hero-rule"></div>
+    <p class="hero-motto" id="heroMotto"></p>
+    <p class="hero-sub" id="heroSub"></p>
+    <div class="hero-stats" id="heroStats"></div>
+  </div>
+  <div class="hero-scroll" id="heroScroll"></div>
+</header>
+
+<main>
+
+<!-- ============ 年度旅行地图 ============ -->
+<section class="section" id="map">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div>
+        <div class="kicker">THE MAP · 年度旅行地图</div>
+        <h2>这一年，我想去四个地方</h2>
+        <p>一个已经走过，两个定了日子，一个还在图上被反复描。点卡片可以进对应的行程页。</p>
+      </div>
+      <div class="rule"></div>
+    </div>
+    <div class="filters rise" id="filters" role="group" aria-label="按状态筛选目的地"></div>
+    <div class="dest-grid" id="destGrid"></div>
+  </div>
+</section>
+
+<!-- ============ 年度旅行时间线 ============ -->
+<section class="section section--tint" id="timeline">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div>
+        <div class="kicker">TIMELINE · 年度行程</div>
+        <h2>2026，一个月一个月地过</h2>
+        <p>实心点代表已经走过，金色点代表日子已定，空心虚线点代表还在规划。没有安排的月份，就是留给生活的空档。</p>
+      </div>
+      <div class="rule"></div>
+    </div>
+    <div class="tl rise" id="timelineList"></div>
+  </div>
+</section>
+
+<!-- ============ 旅行记忆 ============ -->
+<section class="section section--deep" id="memories">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div>
+        <div class="kicker" style="color:var(--gold)" id="memKicker">MEMORIES</div>
+        <h2 id="memTitle">旅行记忆</h2>
+        <p id="memIntro"></p>
+      </div>
+      <div class="rule" style="background:rgba(247,243,234,.2)"></div>
+    </div>
+
+    <div class="mem-feature rise" id="memFeature"></div>
+
+    <div class="mem-sub rise">PHOTOGRAPH · 照片</div>
+    <div class="mem-grid rise" id="memPhotos"></div>
+
+    <div class="mem-sub rise">NOTES · 景点、美食与花费</div>
+    <div class="mem-cols rise" id="memCols"></div>
+
+    <div class="mem-sub rise">REFLECTION · 一次旅行带来的感悟</div>
+    <ul class="mem-list mem-quote rise" id="memQuotes"></ul>
+  </div>
+</section>
+
+<!-- ============ 行前清单 ============ -->
+<section class="section" id="checklist">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div>
+        <div class="kicker">BEFORE WE GO · 行前清单</div>
+        <h2>出发前，把这些勾掉</h2>
+        <p id="clIntro"></p>
+      </div>
+      <div class="rule"></div>
+    </div>
+    <div class="cl-top rise">
+      <div class="cl-progress">
+        <div class="cl-count"><span id="clText">已完成 0 / 0</span><span id="clPct">0%</span></div>
+        <div class="cl-bar"><i id="clBar"></i></div>
+      </div>
+      <button class="cl-reset" id="clReset" type="button">清空全部勾选</button>
+    </div>
+    <div class="cl-groups rise" id="clGroups"></div>
+    <p class="cl-tip">提示：勾选状态保存在你这台设备的浏览器里（localStorage），换手机或清理浏览器缓存会重新开始。</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" data-footer></footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
